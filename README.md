@@ -29,7 +29,7 @@ All csv files for protigeno + baseline evaluation results are uploaded under /re
 
 Our method consists of two components: 1). Bulk computing sequence embeddings using protein language model, 2). Training binary classifier using the obtained embeddings. All runtime information for coding regions embeddings bulk computation can be found in the coding_regions_runtime folder and all runtime information for noncoding regions embeddings bulk computation can be found in the noncoding_regions_runtime folder. All sequences are processed using NVIDIA RTX A6000 GPU. 
 
-All parameters used for training binary classifiers are included in the paper. The binary classifiers are trained on 2.3 GHz 8-Core Intel Core i9 and each takes about an hour to train. 
+For the second component -- binary classifier, all parameters used for training binary classifiers are included in appendix E in the original paper. The binary classifiers are trained on 2.3 GHz 8-Core Intel Core i9 and each takes about an hour to train. 
 
 
 
