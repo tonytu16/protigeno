@@ -12,6 +12,19 @@ All codes are uploaded in the ipython notebook file
 
 Run each cell in order. Alternatively, hold shift and enter to run all cells. Because ProtiGeno uses ESM-1b protein language models to calculate sequence embeddings, each genome could take a few seconds or up to a minute to run depending on the number of sequences and the lengths of the sequences available. Feel free to open a github issue if you run into problems! 
 
+### ProtiGeno genome-wise performance evaluation
+
+All csv files for protigeno + baseline evaluation results are uploaded under /results folder, which contains detailed genome-specific accuracy, precision, recall and F-1 score, in the following table, we report the percentage of genomes on which protigeno outperforms the baseline methods. Note that the percentages are calculated based on 4280 genomes instead of 4288. Since after filtering duplicates, 8 genomes either do not have any coding regions or non-coding regions. We exclude these 8 genomes and only include genomes which have both coding regions and noncoding regions. 
+
+| Baseline Methods | % of genomes protigeno outperforms (Accuracy) | % of genomes protigeno outperforms (Precision) | % of genomes protigeno outperforms (Recall) | % of genomes protigeno outperforms (F1) |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| GeneMarkS (GP) | 73.9 | 37.7 | 88.5 | 74.1 |
+| GeneMarkS (PGP)  | 80.2 | 37.7 | 91.4 | 80.5 |
+| Prodigal (GP)  | 87.9 | 37.8 | 96.1 | 88.2 | 
+| Prodigal (PGP)  | 91.6 | 37.9 | 97.4 | 92.0 | 
+| FragGeneScan (GP)  | 91.5 | 37.9 | 99.3 | 98.2 |
+| FragGeneScan (PGP)  | 93.5 | 37.9 | 99.5 | 98.9 |
+
+### Runtime Information
+
 We have included the runtime information in this repo as well as results in the results folder. Please feel free to reach out to us if you have any questions!
-
-
